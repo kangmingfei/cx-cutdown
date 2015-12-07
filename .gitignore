@@ -1,0 +1,5 @@
+cx-vendor
+node_modules
+build
+preview/
+cx-mod/

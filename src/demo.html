@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cutdown DEMO</title>	
+<script src="cx-vendor/src/sea.js"></script>
+<!-- <script src="cx-vendor/src/seajs-combo.js"></script> -->
+<script src="cx-vendor/src/seajs-css.js"></script>
+<script>
+seajs.config({
+	base: ".",
+	preload: ['$','./1.0.0/style.css','./1.0.0/style2.css'],
+	alias: {
+	  "$": "cx-vendor/src/jquery.js",
+	  'cx-cutdown' : "1.0.0/index.js"
+	},
+	// 路径配置
+	paths: {
+	  'saikejs': '.'
+	},
+	map: [
+	  [/^(.*\.(?:css|js))(.*)$/i, '$1']
+	]
+});
+</script>
+</head>
+<body>
+<div class="timeInfoNode"></div>
+<script>
+seajs.use(["cx-cutdown"],function(cutdown){
+	"define:nomunge,require:nomunge,exports:nomunge,module:nomunge";
+	// use cutdown
+	new cutdown({
+		serverTime: 1447066728992,
+		startTime: 1444406100000,
+		stopTime: 1451577300000,
+		startCallBack: function(timeStampObj){ 	
+			var timeInfoNode = $(".timeInfoNode");
+	    	var timtInfoText="还剩"+ timeStampObj.day + "天"
+	    						+ timeStampObj.hour +"小时"
+	    						+ timeStampObj.minute + "分"
+	    						+ timeStampObj.second + "秒";
+	    	timeInfoNode.html(timtInfoText);
+	    }
+	});
+});
+</script>
+</body>
+</html>
