@@ -1,6 +1,6 @@
 {
   "name": "cx-cutdown",
-  "description": "倒计时",
+  "description": "倒计时组件(saike)",
   "version": "1.0.0-beta",
   "author": "Kang Mingfei 康明飞 <kangmingfei@163.com>",
   "scripts": {
