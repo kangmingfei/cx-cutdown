@@ -1,12 +1,14 @@
 {
   "name": "cx-cutdown",
+  "version": "1.0.0-beta",
   "authors": [
     "Kang Mingfei 康明飞 <kangmingfei@163.com>"
   ],
-  "main": "./1.0.1/index.js",
+  "main": "./dist/index.js",
   "description": "倒计时功能",
   "keywords": [
-    "cx-mod", "cutdown"
+    "cx-mod",
+    "cutdown"
   ],
   "license": "MIT",
   "ignore": [
@@ -16,5 +18,8 @@
     "cx-vendor",
     "package.json",
     "gulpfile.js"
-  ]
+  ],
+  "devDependencies": {
+    "cx-vendor": "~1.0.0"
+  }
 }

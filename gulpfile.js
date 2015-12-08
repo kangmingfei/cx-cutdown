@@ -8,17 +8,7 @@ var gulp = require('gulp'),
 
 //jS文件校验、压缩
 gulp.task('build', function() {
-    var cutdownConfig = require("./bower.json");
-    var cutdownDist = "./" + cutdownConfig.main.split('/')[1];
-    gulp.src(["./src/*.js"])    
-        .pipe(gulp.dest(cutdownDist))
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'))
-        .pipe(rename({suffix:'.min'}))
-        .pipe(uglify())
-        .pipe(gulp.dest(cutdownDist));
-
-
+    var cutdownDist = "./dist";
     gulp.src(["./src/*.js"])    
         .pipe(gulp.dest(cutdownDist))
         .pipe(jshint())

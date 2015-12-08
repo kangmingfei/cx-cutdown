@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Cutdown DEMO</title>	
-<script src="cx-vendor/src/sea.js"></script>
-<!-- <script src="cx-vendor/src/seajs-combo.js"></script> -->
-<script src="cx-vendor/src/seajs-css.js"></script>
+<script src="cx-vendor/1.0.0/sea.js"></script>
+<!-- <script src="cx-vendor/1.0.0/seajs-combo.js"></script> -->
+<script src="cx-vendor/1.0.0/seajs-css.js"></script>
 <script>
 seajs.config({
 	base: ".",
 	preload: ['$','./1.0.0/style.css','./1.0.0/style2.css'],
 	alias: {
-	  "$": "cx-vendor/src/jquery.js",
+	  "$": "cx-vendor/1.0.0/jquery.js",
 	  'cx-cutdown' : "1.0.0/index.js"
 	},
 	// 路径配置
 	paths: {
-	  'saikejs': '.'
+	  'ecar': 'http://s2.cximg.com/msmallmobile/js/lib/ecar'
 	},
 	map: [
 	  [/^(.*\.(?:css|js))(.*)$/i, '$1']
@@ -27,7 +27,7 @@ seajs.config({
 <body>
 <div class="timeInfoNode"></div>
 <script>
-seajs.use(["cx-cutdown"],function(cutdown){
+seajs.use(["cx-cutdown","ecar/ECar.utils","ecar/IScroll"],function(cutdown){
 	"define:nomunge,require:nomunge,exports:nomunge,module:nomunge";
 	// use cutdown
 	new cutdown({
