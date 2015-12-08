@@ -22,6 +22,6 @@
     "gulpfile.js"
   ],
   "devDependencies": {
-    "cx-vendor": "~1.0.0"
+    "cx-vendor": "1.0.0"
   }
 }
