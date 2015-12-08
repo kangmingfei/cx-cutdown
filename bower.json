@@ -13,9 +13,9 @@
   "ignore": [
     "**/.*",
     "src",
+    "node_modules",
     "cx-vendor",
     "package.json",
-    "README.md",
     "gulpfile.js"
   ]
 }
