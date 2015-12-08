@@ -4,9 +4,12 @@
 <meta charset="UTF-8">
 <title>Cutdown DEMO</title>	
 <script src="cx-vendor/dist/sea.js"></script>
-<!-- <script src="../cx-vendor/1.0.0/seajs-combo.js"></script> -->
+<script src="cx-vendor/dist/seajs-combo.js"></script>
 <script src="cx-vendor/dist/seajs-css.js"></script>
 <script>
+function rd(n,m){
+    return Math.floor(Math.random() * (m-n+1) + n);
+}
 seajs.config({
 	base: ".",
 	preload: ['$','dist/style.css','dist/style2.css'],
@@ -19,7 +22,7 @@ seajs.config({
 	  'ecar': 'http://s2.cximg.com/msmallmobile/js/lib/ecar'
 	},
 	map: [
-	  [/^(.*\.(?:css|js))(.*)$/i, '$1']
+		[/^(.*)(\.(?:css|js))(.*)$/i, '$1.min$2?'+ rd(1,100)]
 	]
 });
 </script>
