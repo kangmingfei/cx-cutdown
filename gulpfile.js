@@ -9,7 +9,7 @@ var gulp = require('gulp'),
 //jS文件校验、压缩
 gulp.task('build', function() {
     var cutdownConfig = require("./bower.json");
-    var cutdownDist = "./" + cutdownConfig.version;
+    var cutdownDist = "./" + cutdownConfig.main.split('/')[1];
     gulp.src(["./src/*.js"])    
         .pipe(gulp.dest(cutdownDist))
         .pipe(jshint())
