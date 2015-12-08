@@ -9,5 +9,12 @@
   "keywords": [
     "cx-mod", "cutdown"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "src",
+    "cx-vendor",
+    "package.json",
+    "README.md"
+  ]
 }
