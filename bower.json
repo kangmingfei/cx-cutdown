@@ -14,7 +14,9 @@
     "**/.*",
     "src",
     "cx-vendor",
+    "bower.json",
     "package.json",
-    "README.md"
+    "README.md",
+    "gulpfile.js"
   ]
 }
