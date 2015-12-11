@@ -1,6 +1,6 @@
 # cx-cutdown #
 
-倒计时功能,仿淘宝结构(saike)
+倒计时功能,仿淘宝结构(saikejs)
 
 ```
 作者：**康明飞(kangmingfei@163.com,410394211)** 
