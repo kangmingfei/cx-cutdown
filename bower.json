@@ -17,7 +17,6 @@
     "node_modules",
     "cx-vendor",
     "package.json",
-    "README.md",
     "bower.json",
     "gulpfile.js"
   ],
