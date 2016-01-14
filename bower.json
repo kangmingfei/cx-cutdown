@@ -5,7 +5,7 @@
     "Kang Mingfei 康明飞 <kangmingfei@163.com>"
   ],
   "main": "./dist/index.js",
-  "description": "倒计时组件(saike)",
+  "description": "倒计时组件(saic)",
   "keywords": [
     "cx-mod",
     "cutdown"
